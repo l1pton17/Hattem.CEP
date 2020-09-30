@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1b223369-d2a3-477a-b492-074003a69691" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A5006EA2-EA34-4A8E-8C71-A2EB982AADC0/B/ReadOnlyMemory.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/IJob.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/IJob.Generic.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/JobStatus.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/IPersistentJob.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/IPersistentJob.Generic.s.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/IPersistentJob.Generic.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/IProgressiveJob.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/IRecurringJob.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/IRecurringJob.Generic.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/CEPContext.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/Executors/IJobExecutor.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Persistence/ICEPPersistence.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Transports/QueueBinding.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/DependencyInjection/CQRSBuilderExtensions.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Hattem.CEP.csproj" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Services/AssembliesScanner.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Services/AssembliesScannerPolicy.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/DependencyInjection/CEPBuilder.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Services/AssemblyScannerPolicy.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Services/AssembliesProvider.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Services/JobTypeDefenition.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Extensions/TypeExtensions.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/IProgressiveJob.Generic.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Helpers/TypeHelper.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Helpers/FriendlyTypeNameHelper.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Services/JobTypeDefinition.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Services/JobScanner.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Services/Subscribers/IEventSubscriber.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Serializers/ICEPSerializer.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Services/AssemblyScanner.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/PipelineStepCoordinator.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/Pipeline/IJobPipelineStep.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/JobExecutionPipelineBuilder.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Transports/ICEPTransportExecutionResult.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Transports/CEPTransportContext.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Transports/ICEPTransportMessageHandler.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Transports/ICEPTransport.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Services/Subscribers/JobSubscriber.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/Handlers/JobHandler.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Transports/CEPTransportExecutionResult.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1i9cwoJiBcvyb0jMjGDzMzslE2h" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b223369-d2a3-477a-b492-074003a69691" name="Default Changelist" comment="" />
+      <created>1601323491805</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601323491805</updated>
+      <workItem from="1601323494383" duration="1015000" />
+      <workItem from="1601333902750" duration="6187000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="872" y="252" key="Rider.ProjectTemplateDialog.Size" timestamp="1601334826743">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="872" y="252" key="Rider.ProjectTemplateDialog.Size/2560.0.1920.1040/1919.-1080.1920.1040/0.0.2560.1040@0.0.2560.1040" timestamp="1601334826743" />
+    <state x="1028" y="209" key="RiderGenerateDialog" timestamp="1601339457272">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1028" y="209" key="RiderGenerateDialog/2560.0.1920.1040/1919.-1080.1920.1040/0.0.2560.1040@0.0.2560.1040" timestamp="1601339457272" />
+    <state x="781" y="165" key="SettingsEditor" timestamp="1601336776103">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="781" y="165" key="SettingsEditor/2560.0.1920.1040/1919.-1080.1920.1040/0.0.2560.1040@0.0.2560.1040" timestamp="1601336776103" />
+    <state x="936" y="240" key="run.anything.popup" timestamp="1601339357065">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="936" y="240" key="run.anything.popup/2560.0.1920.1040/1919.-1080.1920.1040/0.0.2560.1040@0.0.2560.1040" timestamp="1601339357065" />
+  </component>
+</project>

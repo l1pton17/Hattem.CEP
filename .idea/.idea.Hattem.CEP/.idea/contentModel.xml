@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\sitdi\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\sitdi\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Hattem.CEP.-505758409.00" t="ExcludeRecursive" />
+    <e p="D:\projects\Hattem\Hattem.CEP" t="IncludeFlat">
+      <e p="Hattem.CEP.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="src" t="Include">
+        <e p="Hattem.CEP" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="CEPContext.cs" t="Include" />
+          <e p="DependencyInjection" t="Include">
+            <e p="CEPBuilder.cs" t="Include" />
+            <e p="CQRSBuilderExtensions.cs" t="Include" />
+          </e>
+          <e p="Extensions" t="Include">
+            <e p="TypeExtensions.cs" t="Include" />
+          </e>
+          <e p="Hattem.CEP.csproj" t="IncludeRecursive" />
+          <e p="Helpers" t="Include">
+            <e p="FriendlyTypeNameHelper.cs" t="Include" />
+          </e>
+          <e p="Jobs" t="Include">
+            <e p="Executors" t="Include">
+              <e p="IJobExecutor.cs" t="Include" />
+            </e>
+            <e p="Handlers" t="Include">
+              <e p="JobHandler.cs" t="Include" />
+            </e>
+            <e p="IJob.cs" t="Include" />
+            <e p="IJob.Generic.cs" t="Include" />
+            <e p="IPersistentJob.cs" t="Include" />
+            <e p="IPersistentJob.Generic.cs" t="Include" />
+            <e p="IProgressiveJob.cs" t="Include" />
+            <e p="IProgressiveJob.Generic.cs" t="Include" />
+            <e p="IRecurringJob.cs" t="Include" />
+            <e p="IRecurringJob.Generic.cs" t="Include" />
+            <e p="JobExecutionPipelineBuilder.cs" t="Include" />
+            <e p="JobStatus.cs" t="Include" />
+            <e p="Pipeline" t="Include">
+              <e p="IJobPipelineStep.cs" t="Include" />
+            </e>
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netstandard2.0" t="Include">
+                <e p="Hattem.CEP.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Persistence" t="Include">
+            <e p="ICEPPersistence.cs" t="Include" />
+          </e>
+          <e p="PipelineStepCoordinator.cs" t="Include" />
+          <e p="Serializers" t="Include">
+            <e p="ICEPSerializer.cs" t="Include" />
+          </e>
+          <e p="Services" t="Include">
+            <e p="AssembliesProvider.cs" t="Include" />
+            <e p="AssemblyScanner.cs" t="Include" />
+            <e p="AssemblyScannerPolicy.cs" t="Include" />
+            <e p="JobScanner.cs" t="Include" />
+            <e p="JobTypeDefinition.cs" t="Include" />
+            <e p="Subscribers" t="Include">
+              <e p="IEventSubscriber.cs" t="Include" />
+              <e p="JobSubscriber.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Transports" t="Include">
+            <e p="CEPTransportContext.cs" t="Include" />
+            <e p="CEPTransportExecutionResult.cs" t="Include" />
+            <e p="ICEPTransport.cs" t="Include" />
+            <e p="ICEPTransportMessageHandler.cs" t="Include" />
+            <e p="QueueBinding.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="tests" t="Include" />
+    </e>
+  </component>
+</project>

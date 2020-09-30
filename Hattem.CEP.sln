@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0F68BCC4-09C6-42C4-828D-67597E787A08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{00B44931-E98F-4799-8AE7-00791551B8E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hattem.CEP", "src\Hattem.CEP\Hattem.CEP.csproj", "{1A742EA5-D57D-46D4-81DB-25852F59A0F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A742EA5-D57D-46D4-81DB-25852F59A0F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A742EA5-D57D-46D4-81DB-25852F59A0F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A742EA5-D57D-46D4-81DB-25852F59A0F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A742EA5-D57D-46D4-81DB-25852F59A0F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1A742EA5-D57D-46D4-81DB-25852F59A0F9} = {0F68BCC4-09C6-42C4-828D-67597E787A08}
+	EndGlobalSection
+EndGlobal
