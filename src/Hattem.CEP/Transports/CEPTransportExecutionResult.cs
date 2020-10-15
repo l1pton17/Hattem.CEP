@@ -34,9 +34,9 @@ namespace Hattem.CEP.Transports
             return new CEPTransportExecutionResult(CEPTransportExecutionResultType.Nack, requeueDelay: null);
         }
 
-        public static CEPTransportExecutionResult Requeue(TimeSpan delay)
+        public static CEPTransportExecutionResult Requeue(TimeSpan? delay = null)
         {
-            if (delay.TotalSeconds < 1)
+            if (delay?.TotalSeconds < 1)
             {
                 throw new ArgumentOutOfRangeException(nameof(delay), "Should be more than one second");
             }

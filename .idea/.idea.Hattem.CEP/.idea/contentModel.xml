@@ -40,6 +40,8 @@
             <e p="JobStatus.cs" t="Include" />
             <e p="Pipeline" t="Include">
               <e p="IJobPipelineStep.cs" t="Include" />
+              <e p="JobPipelineExecutor.cs" t="Include" />
+              <e p="JobPipelineStepContext.cs" t="Include" />
             </e>
           </e>
           <e p="obj" t="ExcludeRecursive">
@@ -60,6 +62,7 @@
             <e p="AssembliesProvider.cs" t="Include" />
             <e p="AssemblyScanner.cs" t="Include" />
             <e p="AssemblyScannerPolicy.cs" t="Include" />
+            <e p="CEPContextFactory.cs" t="Include" />
             <e p="JobScanner.cs" t="Include" />
             <e p="JobTypeDefinition.cs" t="Include" />
             <e p="Subscribers" t="Include">

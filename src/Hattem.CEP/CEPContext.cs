@@ -1,11 +1,15 @@
-﻿namespace Hattem.CEP
+﻿using System;
+
+namespace Hattem.CEP
 {
-    public interface ICEPContext
+    public interface ICEPContext : IDisposable
     {
     }
 
-    internal sealed class CEPContext
+    internal sealed class CEPContext : ICEPContext
     {
-
+        public void Dispose()
+        {
+        }
     }
 }

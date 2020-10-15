@@ -1,10 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Hattem.Api;
+using Hattem.Api.Fluent;
+using Hattem.CEP.Jobs.Executors;
 using Hattem.CEP.Jobs.Pipeline;
 using Hattem.CEP.Serializers;
+using Hattem.CEP.Services;
 using Hattem.CEP.Transports;
 
 namespace Hattem.CEP.Jobs.Handlers
@@ -12,37 +13,37 @@ namespace Hattem.CEP.Jobs.Handlers
     internal sealed class JobHandler<TJob> : ICEPTransportMessageHandler
         where TJob : class, IJob
     {
-        private readonly ImmutableArray<IJobPipelineStep> _steps;
         private readonly ICEPSerializer _serializer;
+        private readonly IJobPipelineExecutor _jobPipelineExecutor;
+        private readonly ICEPContextFactory _cepContextFactory;
+        private readonly IJobExecutor<TJob> _jobExecutor;
 
         public JobHandler(
-            IEnumerable<IJobPipelineStep> steps,
-            IPipelineStepCoordinator<IJobPipelineStep> stepCoordinator,
-            ICEPSerializer serializer
+            ICEPSerializer serializer,
+            IJobPipelineExecutor jobPipelineExecutor,
+            ICEPContextFactory cepContextFactory,
+            IJobExecutor<TJob> jobExecutor
         )
         {
-            if (steps == null)
-            {
-                throw new ArgumentNullException(nameof(steps));
-            }
-
-            if (stepCoordinator == null)
-            {
-                throw new ArgumentNullException(nameof(stepCoordinator));
-            }
-
             _serializer = serializer ?? throw new ArgumentNullException(nameof(serializer));
-
-            _steps = stepCoordinator.Build(steps);
+            _jobPipelineExecutor = jobPipelineExecutor ?? throw new ArgumentNullException(nameof(jobPipelineExecutor));
+            _cepContextFactory = cepContextFactory ?? throw new ArgumentNullException(nameof(cepContextFactory));
+            _jobExecutor = jobExecutor ?? throw new ArgumentNullException(nameof(jobExecutor));
         }
 
-        public Task<ApiResponse<CEPTransportExecutionResult>> Handle(
+        public async Task<ApiResponse<CEPTransportExecutionResult>> Handle(
             CEPTransportContext context,
             ReadOnlyMemory<byte> source
         )
         {
-            return _serializer
-                .Deserialize<TJob>(source);
+            using var cepContext = _cepContextFactory.Create();
+
+            return await _serializer
+                .Deserialize<TJob>(source)
+                .Then(job => _jobPipelineExecutor.Execute(cepContext, JobPipelineStepContext.Create(job, _jobExecutor)))
+                .Return(CEPTransportExecutionResult.Ack())
+                .Catch()
+                .IfError(ErrorPredicate.Any(), _ => ApiResponse.Ok(CEPTransportExecutionResult.Requeue()));
         }
     }
 }

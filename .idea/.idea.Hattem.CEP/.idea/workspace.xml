@@ -8,7 +8,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EBE97773-A052-4C1A-98B5-38B8576D2E15/23/04c087cf/ApiResponseExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A5006EA2-EA34-4A8E-8C71-A2EB982AADC0/B/ReadOnlyMemory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EBE97773-A052-4C1A-98B5-38B8576D2E15/ef/492e1add/ErrorPredicate.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -22,7 +24,6 @@
         <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/IProgressiveJob.cs" />
         <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/IRecurringJob.cs" />
         <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/IRecurringJob.Generic.cs" />
-        <option value="$PROJECT_DIR$/src/Hattem.CEP/CEPContext.cs" />
         <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/Executors/IJobExecutor.cs" />
         <option value="$PROJECT_DIR$/src/Hattem.CEP/Persistence/ICEPPersistence.cs" />
         <option value="$PROJECT_DIR$/src/Hattem.CEP/Transports/QueueBinding.cs" />
@@ -44,15 +45,20 @@
         <option value="$PROJECT_DIR$/src/Hattem.CEP/Serializers/ICEPSerializer.cs" />
         <option value="$PROJECT_DIR$/src/Hattem.CEP/Services/AssemblyScanner.cs" />
         <option value="$PROJECT_DIR$/src/Hattem.CEP/PipelineStepCoordinator.cs" />
-        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/Pipeline/IJobPipelineStep.cs" />
         <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/JobExecutionPipelineBuilder.cs" />
         <option value="$PROJECT_DIR$/src/Hattem.CEP/Transports/ICEPTransportExecutionResult.cs" />
         <option value="$PROJECT_DIR$/src/Hattem.CEP/Transports/CEPTransportContext.cs" />
         <option value="$PROJECT_DIR$/src/Hattem.CEP/Transports/ICEPTransportMessageHandler.cs" />
         <option value="$PROJECT_DIR$/src/Hattem.CEP/Transports/ICEPTransport.cs" />
         <option value="$PROJECT_DIR$/src/Hattem.CEP/Services/Subscribers/JobSubscriber.cs" />
-        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/Handlers/JobHandler.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/Pipeline/IJobPipelineStep.Generic.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/Pipeline/IJobPipelineStep.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/Pipeline/JobPipelineExecutor.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Services/CEPContextFactory.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/Pipeline/JobPipelineStepContext.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/CEPContext.cs" />
         <option value="$PROJECT_DIR$/src/Hattem.CEP/Transports/CEPTransportExecutionResult.cs" />
+        <option value="$PROJECT_DIR$/src/Hattem.CEP/Jobs/Handlers/JobHandler.cs" />
       </list>
     </option>
   </component>
@@ -77,6 +83,7 @@
       <updated>1601323491805</updated>
       <workItem from="1601323494383" duration="1015000" />
       <workItem from="1601333902750" duration="6187000" />
+      <workItem from="1602798287768" duration="2624000" />
     </task>
     <servers />
   </component>
@@ -93,10 +100,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="872" y="252" key="Rider.ProjectTemplateDialog.Size/2560.0.1920.1040/1919.-1080.1920.1040/0.0.2560.1040@0.0.2560.1040" timestamp="1601334826743" />
-    <state x="1028" y="209" key="RiderGenerateDialog" timestamp="1601339457272">
+    <state x="1028" y="209" key="RiderGenerateDialog" timestamp="1602800489388">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1028" y="209" key="RiderGenerateDialog/2560.0.1920.1040/1919.-1080.1920.1040/0.0.2560.1040@0.0.2560.1040" timestamp="1601339457272" />
+    <state x="1028" y="209" key="RiderGenerateDialog/2560.0.1920.1040/1919.-1080.1920.1040/0.0.2560.1040@0.0.2560.1040" timestamp="1602800489388" />
     <state x="781" y="165" key="SettingsEditor" timestamp="1601336776103">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -105,5 +112,9 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="936" y="240" key="run.anything.popup/2560.0.1920.1040/1919.-1080.1920.1040/0.0.2560.1040@0.0.2560.1040" timestamp="1601339357065" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602800854780">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/2560.0.1920.1040/1919.-1080.1920.1040/0.0.2560.1040@0.0.2560.1040" timestamp="1602800854780" />
   </component>
 </project>
