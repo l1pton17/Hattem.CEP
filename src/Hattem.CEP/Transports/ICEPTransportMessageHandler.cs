@@ -6,6 +6,6 @@ namespace Hattem.CEP.Transports
 {
     public interface ICEPTransportMessageHandler
     {
-        Task<ApiResponse<CEPTransportExecutionResult>> Handle(CEPTransportContext context, ReadOnlyMemory<byte> source);
+        Task<ApiResponse<Unit>> Handle(ICEPTransportContext transportContext, ReadOnlyMemory<byte> source);
     }
 }

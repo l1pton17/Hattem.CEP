@@ -4,8 +4,8 @@ namespace Hattem.CEP.Transports
 {
     public enum CEPTransportExecutionResultType
     {
-        Ack,
-        Nack,
+        Accept,
+        Reject,
         Requeue
     }
 
@@ -24,14 +24,14 @@ namespace Hattem.CEP.Transports
             RequeueDelay = requeueDelay;
         }
 
-        public static CEPTransportExecutionResult Ack()
+        public static CEPTransportExecutionResult Accept()
         {
-            return new CEPTransportExecutionResult(CEPTransportExecutionResultType.Ack, requeueDelay: null);
+            return new CEPTransportExecutionResult(CEPTransportExecutionResultType.Accept, requeueDelay: null);
         }
 
-        public static CEPTransportExecutionResult Nack()
+        public static CEPTransportExecutionResult Reject()
         {
-            return new CEPTransportExecutionResult(CEPTransportExecutionResultType.Nack, requeueDelay: null);
+            return new CEPTransportExecutionResult(CEPTransportExecutionResultType.Reject, requeueDelay: null);
         }
 
         public static CEPTransportExecutionResult Requeue(TimeSpan? delay = null)

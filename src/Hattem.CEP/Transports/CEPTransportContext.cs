@@ -2,6 +2,11 @@
 
 namespace Hattem.CEP.Transports
 {
+    public interface ICEPTransportContext
+    {
+        object? Get(string key);
+    }
+
     public sealed class CEPTransportContext
     {
         private Dictionary<string, object> _bag;

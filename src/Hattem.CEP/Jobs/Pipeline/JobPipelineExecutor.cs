@@ -4,12 +4,17 @@ using System.Collections.Immutable;
 using System.Linq;
 using System.Threading.Tasks;
 using Hattem.Api;
+using Hattem.CEP.Transports;
 
 namespace Hattem.CEP.Jobs.Pipeline
 {
     internal interface IJobPipelineExecutor
     {
-        Task<ApiResponse<Unit>> Execute<TJob>(ICEPContext cepContext, JobPipelineStepContext<TJob> jobContext)
+        Task<ApiResponse<Unit>> Execute<TJob>(
+            ICEPTransportContext transportContext,
+            ICEPContext cepContext,
+            JobPipelineStepContext<TJob> jobContext
+        )
             where TJob : class, IJob;
     }
 
@@ -35,18 +40,22 @@ namespace Hattem.CEP.Jobs.Pipeline
             _steps = stepCoordinator.Build(steps);
         }
 
-        public Task<ApiResponse<Unit>> Execute<TJob>(ICEPContext cepContext, JobPipelineStepContext<TJob> jobContext)
+        public Task<ApiResponse<Unit>> Execute<TJob>(
+            ICEPTransportContext transportContext,
+            ICEPContext cepContext,
+            JobPipelineStepContext<TJob> jobContext
+        )
             where TJob : class, IJob
         {
             ExecuteCache<TJob>.EnsureInitialized(_steps);
 
-            return ExecuteCache<TJob>.Pipeline!(cepContext, jobContext);
+            return ExecuteCache<TJob>.Pipeline!(transportContext, cepContext, jobContext);
         }
 
         private static class ExecuteCache<TJob>
             where TJob : class, IJob
         {
-            public static Func<ICEPContext, JobPipelineStepContext<TJob>, Task<ApiResponse<Unit>>>? Pipeline { get; private set; }
+            public static Func<ICEPTransportContext, ICEPContext, JobPipelineStepContext<TJob>, Task<ApiResponse<Unit>>>? Pipeline { get; private set; }
 
             public static void EnsureInitialized(in ImmutableArray<IJobPipelineStep> steps)
             {
@@ -55,14 +64,14 @@ namespace Hattem.CEP.Jobs.Pipeline
                     return;
                 }
 
-                Func<ICEPContext, JobPipelineStepContext<TJob>, Task<ApiResponse<Unit>>> pipeline = (cepContext, jobContext)
-                    => jobContext.Executor.Execute(cepContext, jobContext.Job);
+                Func<ICEPTransportContext, ICEPContext, JobPipelineStepContext<TJob>, Task<ApiResponse<Unit>>> pipeline = (transportContext, cepContext, jobContext)
+                    => jobContext.Executor.Execute(transportContext, cepContext, jobContext.Job);
 
                 foreach (var step in steps.Reverse())
                 {
                     var pipelineLocal = pipeline;
 
-                    pipeline = (cepContext, jobContext) => step.Execute(pipelineLocal, cepContext, jobContext);
+                    pipeline = (transportContext, cepContext, jobContext) => step.Execute(pipelineLocal, transportContext, cepContext, jobContext);
                 }
 
                 Pipeline ??= pipeline;

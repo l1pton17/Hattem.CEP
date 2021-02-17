@@ -1,13 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
+        <TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp3.1</TargetFrameworks>
         <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Hattem.CQRS" Version="1.0.4" />
+      <PackageReference Include="Hattem.Api" Version="0.9.5" />
+      <PackageReference Include="Hattem.CQRS" Version="1.0.5" />
     </ItemGroup>
 
 </Project>
